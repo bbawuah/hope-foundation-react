@@ -45,6 +45,7 @@ h1 {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: max-content;
     transform: translate(-50%, -50%);
     opacity: 1;
     flex-direction: column;
@@ -188,6 +189,10 @@ ul li:last-of-type .li-links {
 }
 
 @media screen and (max-width: 920px) {
+
+  .landing section h1{
+    font-size: 3rem;
+  }
   .landing section h2 {
     font-size: 2.16rem;
   }
@@ -257,7 +262,7 @@ blockquote{
     max-width: 600px;
 
     h3 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       border-bottom: 2px solid #076f81;
       border-radius: 1px;
       color: #2d3748;
@@ -413,7 +418,7 @@ aside:nth-of-type(2) {
   margin: 0 1.5rem;
 
   h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #2d3748;
     border-bottom: 2px solid #076f81;
     margin-bottom: 1rem;
@@ -467,7 +472,7 @@ aside:nth-of-type(2) {
   padding-bottom: 4rem;
 
   h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #2d3748;
     border-bottom: 2px solid #076f81;
     margin-bottom: 1rem;
@@ -541,7 +546,7 @@ aside:nth-of-type(2) {
     position: relative;
     z-index: 5;
     h3 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       color: $title-color;
       border-bottom: 2px solid #edf2f7;
       margin-bottom: 1.5rem;
