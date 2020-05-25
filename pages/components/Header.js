@@ -111,9 +111,9 @@ const Header = () => (
           }
         }
 
-        @media screen and (min-width: 1700px) {
+        @media screen and (min-width: 1900px) {
           header {
-            max-width: 1500px;
+            max-width: 1900px;
             left: 50%;
             padding: 1vmax;
             transform: translate(-50%);

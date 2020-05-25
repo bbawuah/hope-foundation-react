@@ -198,9 +198,9 @@ ul li:last-of-type .li-links {
   }
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1900px) {
   .landing {
-    max-width: 1500px;
+    max-width: 1900px;
     left: 50%;
     transform: translate(-50%);
   }
@@ -335,13 +335,13 @@ blockquote{
   
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1900px) {
   .about-section,
   .mission,
   .support,
   .birdbg,
   footer {
-    max-width: 1500px;
+    max-width: 1900px;
   }
 
   footer {
