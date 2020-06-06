@@ -103,7 +103,8 @@ const Header = () => (
         @media screen and (max-width: 700px) {
           header {
             flex-direction: column;
-            padding: 1vmax 9.5vw;
+            padding: 1vmax 2vmax;
+            align-items: start;
           }
 
           header ul {
