@@ -19,7 +19,7 @@ const aboutText = {
   ),
   second: (
     <p>
-      As of now, I am a healthy 24 year old Dutch-Ghanaian living in the
+      As of now, I am a healthy 25 year old Dutch-Ghanaian living in the
       Netherlands. I was blessed enough to receive the necessary care I needed
       here in the Netherlands to get my second chance at life, but I know that
       the same cannot be said for all the dialysis patients across the world
@@ -29,12 +29,27 @@ const aboutText = {
 
   third: (
     <p>
-      That is why I founded the <strong>H.O.P.E. foundation</strong> to get
+      That is why I founded the <strong>H.O.P.E. Foundation</strong> to get
       attention for kidney / dialysis patients among others in Ghana especially
       for those who are at a young age. The care the patients receive in Ghana
       is not as advanced as it is here in Europe and so, I want to help improve
       the care there first and hopefully extend it at a later stage to other
       countries in a similar situation.
+    </p>
+  ),
+
+  forth: (
+    <p>
+      The reason behind the name <strong>H.O.P.E. Foundation</strong> comes from
+      the period I started going into my dialysis phase and I remember having so
+      much complications during it. I really wanted to give up and felt really
+      lonely and even felt like every day could have been my last day. With no
+      one to talk during my dialysis, I just started praying and then I heard a
+      voice saying “You’re not alone, I’m here with you! Hold on, your pain will
+      end!” That’s when I knew God was in control and my pain would end! So
+      <em> H.O.P.E </em> became my motto and encouragement through my dialysis
+      and kept me strong all the way through it. That’s why I knew that it had
+      to be the name of this foundation.
     </p>
   ),
 };
@@ -177,6 +192,46 @@ const About = () => (
                 alt=""
                 style={{ ...props }}
               ></img>
+            )}
+          </Spring>
+        )}
+      </VisibilitySensor>
+    </AboutSection>
+
+    <AboutSection>
+      <VisibilitySensor once partialVisibility>
+        {({ isVisible }) => (
+          <Spring
+            delay={150}
+            to={{
+              opacity: isVisible ? 1 : 0,
+              transform: isVisible ? "translateY(0)" : "translateY(100px)",
+            }}
+          >
+            {(props) => (
+              <img
+                src="static/img/gladdejongen1.jpeg"
+                alt=""
+                style={{ ...props }}
+              ></img>
+            )}
+          </Spring>
+        )}
+      </VisibilitySensor>
+
+      <VisibilitySensor once partialVisibility>
+        {({ isVisible }) => (
+          <Spring
+            delay={100}
+            to={{
+              opacity: isVisible ? 1 : 0,
+              transform: isVisible ? "translateY(0)" : "translateY(100px)",
+            }}
+          >
+            {(props) => (
+              <div className="article-wrapper" style={{ ...props }}>
+                <Article className="second-text">{aboutText.forth}</Article>
+              </div>
             )}
           </Spring>
         )}

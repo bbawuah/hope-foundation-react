@@ -8,7 +8,7 @@ class VisibilitySensor extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: true
+      active: true,
     };
   }
 
@@ -18,27 +18,26 @@ class VisibilitySensor extends Component {
     return (
       <VSensor
         active={active}
-        onChange={isVisible =>
+        onChange={(isVisible) =>
           once &&
           isVisible &&
           this.setState({ active: false }, () =>
-            console.log("turned the thing off!")
+            console.log("Support H.O.P.E Foundation!!")
           )
         }
         {...theRest}
       />
-       
     );
   }
 }
 
 VisibilitySensor.propTypes = {
   once: PropTypes.bool,
-  children: PropTypes.func.isRequired
+  children: PropTypes.func.isRequired,
 };
 
 VisibilitySensor.defaultProps = {
-  once: false
+  once: false,
 };
 
 export default VisibilitySensor;

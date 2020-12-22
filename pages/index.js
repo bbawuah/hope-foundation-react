@@ -20,7 +20,7 @@ export default function Index() {
         <title>H.O.P.E. Foundation</title>
         <meta
           name="description"
-          content="H.O.P.E. foundation is a foundation that works for dialysis patients mainly in Ghana."
+          content="H.O.P.E. Foundation is a Foundation that works for dialysis patients mainly in Ghana."
         />
         <meta
           name="keywords"

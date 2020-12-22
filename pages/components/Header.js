@@ -7,7 +7,7 @@ const Header = () => (
       <a>
         <div className="logo-div">
           <img src="static/img/logo-hope-small-min.png" alt=""></img>
-          <p>H.o.p.e. foundation</p>
+          <p>H.o.p.e. Foundation</p>
         </div>
       </a>
     </Link>
@@ -61,7 +61,7 @@ const Header = () => (
           left: 0;
           flex-direction: row;
           width: 100%;
-          padding: .4vmax 9.5vw;
+          padding: 0.4vmax 9.5vw;
           align-items: center;
           background: #f7fafc;
           justify-content: space-between;
@@ -74,17 +74,17 @@ const Header = () => (
           width: 2.2em;
         }
 
-        .logo-div{
+        .logo-div {
           display: flex;
           align-items: center;
         }
 
-        .logo-div p{
+        .logo-div p {
           margin-left: 1rem;
           font-size: 0.9rem;
           text-transform: uppercase;
           font-weight: bolder;
-          color: #A0AEC0;
+          color: #a0aec0;
         }
 
         header ul {

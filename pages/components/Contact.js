@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Spring } from "react-spring/renderprops.cjs";
 import VisibilitySensor from "./VisibilitySensor";
+import swal from "sweetalert";
 
 export default () => {
   const [status, setStatus] = useState({
@@ -25,10 +26,12 @@ export default () => {
         email: "",
         message: "",
       });
+      swal("Success!", msg, "success");
     } else {
       setStatus({
         info: { error: true, msg: msg },
       });
+      swal("Oops!", msg, "error");
     }
   };
 
@@ -70,7 +73,7 @@ export default () => {
           }}
         >
           {(props) => (
-            <div className="form-container" style={{...props}}>
+            <div className="form-container" style={{ ...props }}>
               <h3>Contact us!</h3>
               <form onSubmit={handleOnSubmit} className="contact-form">
                 <label htmlFor="email">Email</label>
@@ -98,14 +101,6 @@ export default () => {
                       : "Submitting..."}
                   </span>
                 </button>
-                <span className="response-text">
-                  {status.info.error && (
-                    <div className="error">{status.info.msg}</div>
-                  )}
-                  {!status.info.error && status.info.msg && (
-                    <div className="success">{status.info.msg}</div>
-                  )}
-                </span>
               </form>
             </div>
           )}

@@ -230,8 +230,7 @@ blockquote{
   text-align: center;
 }
 
-.about-section:first-of-type,
-.about-section:last-of-type {
+.about-section:first-of-type{
   .article-wrapper {
     margin-right: 2rem;
   }
@@ -239,9 +238,19 @@ blockquote{
 
 
 
-.about-section:nth-of-type(3) {
+.about-section:nth-of-type(3), .about-section:nth-of-type(5) {
   .article-wrapper {
     margin-left: 2rem;
+
+    .article {
+      justify-items: flex-end;
+    }
+  }
+}
+
+.about-section:nth-of-type(4) {
+  .article-wrapper {
+    margin-right: 2rem;
 
     .article {
       justify-items: flex-end;
@@ -376,7 +385,7 @@ aside {
   .fa-percentage,
   .fa-procedures,
   .fa-euro-sign {
-    width: 5rem;
+    width: 5rem !important;
     height: 5rem;
     justify-self: center;
     margin-bottom: 1rem;
