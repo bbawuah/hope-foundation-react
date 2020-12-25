@@ -318,6 +318,8 @@ blockquote{
   }
 
   .about-section:nth-of-type(3),
+  .about-section:nth-of-type(4),
+  .about-section:nth-of-type(5),
   .about-section:last-of-type,
   .about-section:first-of-type {
     .article-wrapper{
@@ -335,7 +337,8 @@ blockquote{
     width: 30vmax;
   }
 
-  .about-section:nth-of-type(3) {
+  .about-section:nth-of-type(3), 
+  .about-section:last-of-type {
     img {
       order: 2;
     }
