@@ -20,7 +20,7 @@
     "@zeit/next-sass": "^1.0.1",
     "dotenv": "^8.2.0",
     "next": "^9.3.5",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scroll": "^1.7.16",
